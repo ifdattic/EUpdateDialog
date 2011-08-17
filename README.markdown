@@ -164,3 +164,15 @@ CSRF validation
 ---------------
 
 EUpdateDialog works with or without CSRF validation. It will need jQuery cookie plugin (which is included in extension) or you can download it from [jQuery plugins page](http://plugins.jquery.com/project/Cookie "jQuery plugins page") (with a few changes it should work with any method which can read cookie values). If you are using other than default name for token, you will need to update `EUpdateDialog.js` file, line 23 with your CSRF token name. If you are not using CSRF validation, extension degrades gracefully without adding cookie or CSRF token cookie.
+
+Flash message
+-------------
+
+Actions automatically sets flash message for additional feedback. If you don't want to use them you will have to remove `$controller->setFlash( ...` from your action files. To use flash messages you will need to add following method to your controller:
+
+```php
+public function setFlash( $key, $value, $defaultValue = null )
+{
+  Yii::app()->user->setFlash( $key, $value, $defaultValue );
+}
+```
