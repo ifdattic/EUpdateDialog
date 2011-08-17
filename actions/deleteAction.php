@@ -72,6 +72,8 @@ class DeleteAction extends CAction
       if( isset( $_POST['confirmDelete'] ) )
       {
         $model->delete();
+        $controller->setFlash( 'flashMessage', array(
+          'type' => 'success', 'content' => $this->successMessage ) );
         $controller->redirect( array( 'admin' ) );
       }
       else if( isset( $_POST['denyDelete'] ) )

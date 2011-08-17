@@ -50,7 +50,11 @@ class UpdateAction extends CAction
           exit;
         }
         else
+        {
+          $controller->setFlash( 'flashMessage', array( 
+            'type' => 'success', 'content' => $this->successMessage ) );
           $controller->redirect( array( 'view', 'id' => $model->id ) );
+        }
       }
     }
     
