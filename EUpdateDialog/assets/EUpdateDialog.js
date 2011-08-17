@@ -1,3 +1,10 @@
+/*!
+ * EUpdateDialog allows to create/update/delete model entry from JUI Dialog.
+ * 
+ * Copyright 2011, Andrius Marcinkevicius
+ * Licensed under MIT license. http://ifdattic.com/MIT-license.txt
+ */
+
 /**
  * Close and clean contents of update dialog.
  */

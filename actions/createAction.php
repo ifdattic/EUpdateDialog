@@ -2,8 +2,8 @@
 /**
  * CreateAction class file.
  * 
- * @author Andrew M. <andrew.web@ifdattic.com>
- * @copyright Copyright &copy; 2011 Andrew M.
+ * @author Andrius Marcinkevicius <andrew.web@ifdattic.com>
+ * @copyright Copyright &copy; 2011 Andrius Marcinkevicius
  * @license Licensed under MIT license. http://ifdattic.com/MIT-license.txt
  * @version 1.0
  */
@@ -12,7 +12,7 @@
  * CreateAction represents an action that creates new model using normal
  * view or EUpdateDialog extension.
  * 
- * @author Andrew M. <andrew.web@ifdattic.com>
+ * @author Andrius Marcinkevicius <andrew.web@ifdattic.com>
  */
 class CreateAction extends CAction
 {
