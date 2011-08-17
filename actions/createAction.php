@@ -41,6 +41,7 @@ class CreateAction extends CAction
         {
           // Stop jQuery from re-initialization
           Yii::app()->clientScript->scriptMap['jquery.js'] = false;
+          Yii::app()->clientScript->scriptMap['jquery.min.js'] = false;
           
           echo CJSON::encode( array(
             'status' => 'success',
@@ -57,6 +58,7 @@ class CreateAction extends CAction
     {
       // Stop jQuery from re-initialization
       Yii::app()->clientScript->scriptMap['jquery.js'] = false;
+      Yii::app()->clientScript->scriptMap['jquery.min.js'] = false;
       
       echo CJSON::encode( array(
         'status' => 'failure',

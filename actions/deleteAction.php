@@ -38,6 +38,7 @@ class DeleteAction extends CAction
     {
       // Stop jQuery from re-initialization
       Yii::app()->clientScript->scriptMap['jquery.js'] = false;
+      Yii::app()->clientScript->scriptMap['jquery.min.js'] = false;
       
       if( isset( $_POST['action'] ) && $_POST['action'] == 'confirmDelete' )
       {
