@@ -1,1 +1,0 @@
-These controller and view files shouldn't be used in your own projects. They are only included as reference point to help you implement eUpdateDialog extension in your own project.
