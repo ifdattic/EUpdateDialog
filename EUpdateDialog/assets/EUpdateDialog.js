@@ -151,7 +151,7 @@ var updateDialog = {
    * @return string CSRF token if CSRF validation is enabled.
    */
   getCsrfToken : function(){
-    if( ( jQuery.cookie ) && ( typeof this.csrfTokenName !== null ) )
+    if( ( jQuery.cookie ) && ( this.csrfTokenName != null ) )
     {
       return ( '&' + this.csrfTokenName + '=' + $.cookie( this.csrfTokenName ) );
     }
